@@ -26,7 +26,7 @@ const CountdownTimer = ({ onTimerComplete }) => {
     );
   };
 
-  const targetDate = new Date('2023-12-26T05:00:00.000Z');
+  const targetDate = new Date('2023-12-28T05:00:00.000Z');
   return (
     <Countdown 
       date={targetDate} 
