@@ -1,0 +1,12 @@
+.App {
+  text-align: center;
+}
+
+.app {
+  background-color: #fff5f8; /* Set your desired background color */
+  min-height: 100vh; /* Ensure it covers the full viewport height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+

@@ -1,0 +1,39 @@
+/* CountdownTimer.css */
+
+body, html {
+    height: 100%;
+    margin: 0;
+  }
+  
+  .countdown-display {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+    font-family: 'Parisienne', cursive;
+    background-color: #fff5f8; /* Light pink background */
+    color: #ff69b4; /* Pink color */
+    font-size: 3rem; /* Larger font size */
+    text-align: center;
+    transition: opacity 2s ease-out;
+    opacity: 1;
+}
+
+.main-content {
+  transition: opacity 1s ease-in;
+  opacity: 0;
+}
+  
+.time-section {
+margin: 0 15px;
+font-size: 8rem;
+}
+
+.time-label {
+display: block; /* Makes the label appear under the number */
+font-size: 4rem;
+}
+  
+  .fade-out {
+    opacity: 0;
+}

@@ -1,0 +1,19 @@
+/* AnniversaryMessage.css */
+
+.anniversary-message {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Parisienne', cursive;
+    color: #ff69b4; /* Pink color */
+    font-size: 5rem;
+    text-align: center;
+    transition: opacity 2s ease-in;
+    opacity: 0; /* Start invisible */
+  }
+  
+  .visible {
+    opacity: 1; /* Transition to visible */
+  }
+  

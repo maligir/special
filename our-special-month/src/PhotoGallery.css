@@ -1,0 +1,41 @@
+/* PhotoGallery.css */
+
+.photo-gallery {
+    display: flex;
+    justify-content: space-evenly; /* Distribute photos evenly */
+    align-items: center; /* Align photos vertically */
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 8%; /* Adjust as needed */
+    height: 35vh; /* Height of the photo gallery area */
+  }
+  
+  .photo-frame {
+    width: 15%; /* Equal width for each photo frame */
+    height: 80%; /* Height relative to the parent container */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid #ffe4e1; /* Attractive border color */
+    border-radius: 10px; /* Rounded corners for the frames */
+    overflow: hidden; /* Ensures the photo doesn't exceed the frame */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    max-width: 160px;
+  }
+  
+  .gallery-photo {
+    width: 100%; /* Ensure the photo covers the frame */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover; /* Cover the frame without stretching */
+  }
+  
+  .photo-gallery, .quotes-gallery {
+    transition: opacity 2s ease-in;
+    opacity: 0; /* Start invisible */
+  }
+  
+  .visible {
+    opacity: 1; /* Transition to visible */
+  }
+  

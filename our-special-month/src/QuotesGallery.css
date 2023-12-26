@@ -1,0 +1,45 @@
+/* QuotesGallery.css */
+
+.quotes-gallery {
+    display: flex;
+    justify-content: space-evenly; /* Distribute bubbles evenly */
+    align-items: center; /* Align bubbles vertically */
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 8%; /* Adjust as needed */
+    height: 35vh; /* Height of the quote bubble area */
+  }
+  
+  .quote-bubble {
+    border-radius: 18px; /* Rounded corners like iMessage */
+    padding: 10px 15px; /* Padding inside the bubble */
+    margin: 0; /* No margin needed since space-around is used */
+    width: 20%; /* Equal width for each bubble */
+    height: 80%; /* Height relative to the parent container */
+    display: flex;
+    justify-content: center; /* Center text horizontally */
+    align-items: center; /* Center text vertically */
+    font-family: 'Playfair Display', serif; /* Elegant, stylish font */
+    font-size: 1.2rem; /* Slightly larger font size */
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    word-wrap: break-word; /* Ensure text wraps within the bubble */
+    background-color: #fee8e5; /* Soft pink that goes well with the theme */
+    color: #555; /* A darker text color for contrast */
+    text-align: center; /* Ensure text is centered */
+}
+  
+  /* Adjust the below property as needed if the text doesn't fit well */
+  .quote-bubble {
+    max-width: 160px; /* Max width for each bubble to maintain the shape */
+  }
+  
+  .photo-gallery, .quotes-gallery {
+    transition: opacity 2s ease-in;
+    opacity: 0; /* Start invisible */
+  }
+  
+  .visible {
+    opacity: 1; /* Transition to visible */
+  }
+  
